@@ -1,8 +1,8 @@
-# Something Cool 
+# Project Title 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-kjsdoifjk 
+This is my description of the file 
 
 ## Table of Contents
 
@@ -15,21 +15,21 @@ kjsdoifjk
 
 ## Installation
 
-kjsoidjlkj
+This is how to install my file
 
 
 ## Usage Guidelines
 
-jkjdsoijk
+This is how you can use my file
 
 ## Contributing Guidelines
 
-jiojkljlksd
+That's fine
 
 
 ## Testing Guidelines
 
-ijoijklj
+Test like this
 
 ## Questions
 
@@ -39,5 +39,5 @@ If you have further questions contact me via email at laura.schooley3@gmail.com.
 
 ## License
 
-Something Cool is covered under the MIT license.
+Project Title is covered under the Apache license.
 

@@ -1,41 +1,78 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let badge ='';
-  if (license === "MIT") {
-     badge =
-      "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-  } else if (license === "GNU") {
-     badge =
-      "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-  } else if (license === "Apache") {
-     badge =
-      "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-  } else if (license === "BSD") {
-    badge =
-      "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
-  } else if (license === "Creative Commons") {
-    badge =
-      "[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)";
-  } else {
-    badge =
-      "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+  let badge = "";
+  switch (license) {
+    case "MIT":
+      badge =
+        "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+      break;
+    case "GNU":
+      badge =
+        "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
+      break;
+    case "Apache":
+      badge =
+        "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+      break;
+    case "BSD":
+      badge =
+        "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]";
+      break;
+    case "Creative Commons":
+      badge =
+        "[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)]";
+      break;
+    case "Mozilla":
+      badge =
+        "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]";
+      break;
+    default:
+      console.log(`Please supply a valid License`);
   }
   return badge;
-  
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let link = "";
+  switch (license) {
+    case "MIT":
+      link = "(https://opensource.org/licenses/MIT)";
+      break;
+    case "GNU":
+      link = "(https://www.gnu.org/licenses/gpl-3.0)";
+      break;
+    case "Apache":
+      link = "(https://opensource.org/licenses/Apache-2.0)";
+      break;
+    case "BSD":
+      link = "(https://creativecommons.org/licenses/by-nc/4.0/)";
+      break;
+    case "Creative Commons":
+      link =
+        "[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)]";
+      break;
+    case "Mozilla":
+      link = "(https://opensource.org/licenses/MPL-2.0)";
+      break;
+    default:
+      console.log(`Please supply a valid License`);
+  }
+  return link;
+}
 
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+   return `${renderLicenseBadge(license)}${renderLicenseLink(license)}`;
+
+}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(
-  {title,
+function generateMarkdown({
+  title,
   description,
   install,
   usage,
@@ -43,10 +80,11 @@ function generateMarkdown(
   test,
   username,
   email,
-  license}) {
+  license,
+}) {
   return `# ${title} 
 
-${renderLicenseBadge(license)}
+${renderLicenseSection(license)}
 
 ${description} 
 
