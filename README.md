@@ -1,8 +1,8 @@
-# Project Title 
+# Hatching Meeples - A Game Night Coordinator 
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is my description of the file 
+This is an application used to look at hot board games, coordinate with other players &  create a an event that group memembers can view 
 
 ## Table of Contents
 
@@ -15,29 +15,28 @@ This is my description of the file
 
 ## Installation
 
-This is how to install my file
+Clone the git hub repositiory then run nppm build, npm seed, and finally npm start
 
 
 ## Usage Guidelines
 
-This is how you can use my file
+Run the website and click the appropriate links and fill out forms to your hearts content
 
 ## Contributing Guidelines
 
-That's fine
+you are welcome to contribute, just shoot a message to be sure.
+
+Other contributors are: [lschooley3](https://github.com/lschooley3) and [Riesyn](https://github.com/Riesyn)
 
 
-## Testing Guidelines
-
-Test like this
 
 ## Questions
 
-You can find me on [GitHub](https://github.com/lschooley3/) with username lschooley3.
+You can find me on [GitHub](https://github.com/fluviangumbo/) with username fluviangumbo.
 
-If you have further questions contact me via email at laura.schooley3@gmail.com.
+If you have further questions contact me via email at jroney002@gmail.com.
 
 ## License
 
-Project Title is covered under the Apache license.
+Hatching Meeples - A Game Night Coordinator is covered under the MIT license.
 
